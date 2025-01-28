@@ -43,7 +43,7 @@ Before running the project, ensure you have the following installed:
 4. **Compile Protocol Buffers**:
 
    ```bash
-   python3 -m grpc_tools.protoc -I./protos --python_out=. --grpc_python_out=. ./protos/service.proto
+   python3 -m grpc_tools.protoc -I./proto --python_out=. --grpc_python_out=. ./proto/service.proto
    ```
 
 5. **Run Migrations** (if using Django ORM):
