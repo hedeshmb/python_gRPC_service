@@ -111,9 +111,10 @@ def create_user(request):
 ├── grpc_service
 ├── myapp/
 │   ├── management/
-│   │   ├── run_grpc_server.py #command for run grpc server
+│   │   ├── run_grpc_server.py # Command for run grpc server
 │   ├── grpc_services.py  # gRPC service implementations
 │   ├── models.py         # Django models
+│   ├── proto_generated   # Python files generated with proto
 │   ├── ...
 ├── protos/
 │   ├── service.proto     # Protocol Buffers definitions
