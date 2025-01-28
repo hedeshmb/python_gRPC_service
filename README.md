@@ -43,18 +43,18 @@ Before running the project, ensure you have the following installed:
 4. **Compile Protocol Buffers**:
 
    ```bash
-   python -m grpc_tools.protoc -I./protos --python_out=. --grpc_python_out=. ./protos/service.proto
+   python3 -m grpc_tools.protoc -I./protos --python_out=. --grpc_python_out=. ./protos/service.proto
    ```
 
 5. **Run Migrations** (if using Django ORM):
 
    ```bash
-   python manage.py migrate
+   python3 manage.py migrate
    ```
 
 6. **Start the gRPC Server**:
    ```bash
-   python manage.py run_grpc_server
+   python3 manage.py run_grpc_server
    ```
 
 ## Usage
@@ -110,6 +110,8 @@ def create_user(request):
 ├── manage.py
 ├── grpc_service
 ├── myapp/
+│   ├── management/
+│   │   ├── run_grpc_server.py #command for run grpc server
 │   ├── grpc_services.py  # gRPC service implementations
 │   ├── models.py         # Django models
 │   ├── ...
